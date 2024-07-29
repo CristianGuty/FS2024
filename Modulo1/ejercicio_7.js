@@ -4,6 +4,7 @@ var ordenados = [];
 mayor = 0;
 let cantCadenas = 0;
 
+//PUNTO 1
 for (let i = 0; i < valores.length; i++){
     
     if (valores[i].length > mayor){
@@ -14,25 +15,7 @@ for (let i = 0; i < valores.length; i++){
 }
 document.write(`El componente del array de mayor longitud es el ${posicion} y corresponde a '${valores[posicion]}' con ${valores[posicion].length} caracteres <br>`);
 
-
-
-for (let i = 0; i < valores.length; i++){
-    if (typeof valores[i] == "string"){
-        //cantCadenas ++;
-       let cadenaEliminada = valores.splice(i,1);
-       valores.push(cadenaEliminada);
-       //i--;
-    }
-}
-//console.log(cantCadenas);
-
-for (i = 0; i < valores.length; i++){
-    document.write(`${valores[i]} <br>`);
-}
-
-
-
-
+//PUNTO 2
 
 for (let i = 0; i < valores.length; i++){
     cadenas[i] = valores[i].toString();
@@ -41,7 +24,7 @@ for (let i = 0; i < valores.length; i++){
 //   document.write(`${cadenas[i]} <br>`);
 //  
 //}
-for (i = 0; i < cadenas.length; i++){
+for (i = 0; i < cadenas.length; i++){ //ME FIJO SI FUNCIONO LA CONVERSION
     document.write(`${typeof cadenas[i]} <br>`);
   
 }
@@ -51,5 +34,21 @@ cadenas.sort((a,b) => a.length - b.length);
 document.write(`"Los elementos de texto ordenados por cantidad de caracteres quedarian asi:" <br>`);
 for (i = 0; i < valores.length; i++){
     document.write(`${cadenas[i]} <br>`);
-  
 }
+
+// AHORA LO HAGO PERO SOLO LOS STRING
+for (i = 0; i < valores.length; i++){
+    document.write(`Tipos de componentes dentro del array ${typeof valores[i]} <br>`); // IDENTIFICO LOS TIPOS
+}
+for (let i = 0; i < valores.length; i++){
+    if (typeof valores[i] == "string"){
+        ordenados = [valores [i]];
+    }
+}
+
+for (i = 0; i < ordenados.length; i++){
+    document.write(`El array de cadenas queda asi: ${ordenados[i]} <br>`);
+}
+
+
+

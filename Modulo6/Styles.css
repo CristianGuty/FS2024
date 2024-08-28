@@ -1,0 +1,22 @@
+
+h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 75px;
+        background-color: rgb(143, 6, 6); 
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px 20px;
+        border-color: rgb(0, 0, 0);
+        border-style: groove;
+        border-width: 5px;
+}
+
+
+
+p{
+    color: coral;
+    font-style: oblique;
+    font-size: larger;
+    background-color: darkred;
+    text-shadow: 5px 5 px 5px rgb(31, 20, 20);
+}

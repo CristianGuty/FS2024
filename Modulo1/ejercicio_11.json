@@ -1,5 +1,5 @@
-
-[
+{
+"Articulos_deportivos" : [
     {
       "id_producto": 283,
       "nombre": "Gafas de sol",
@@ -51,3 +51,4 @@
       "talle": "M"
     }
   ]
+}
